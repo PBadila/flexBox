@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+<header>Header</header>
+<hr>
+<div id="body-box">
+    <div id="column-1">
+        <p>Sidebar 300px</p>
+        <p>Column 1</p>
+    </div>
+    <div id="column-2">
+        <p>Content Remaining Width</p>
+        <p>Column 2</p>
+        <p>In this example, I am allowing the content to determine the size of the columns.
+            I have not set column heights.
+        </p>
+        <hr>
+        <p>Both columns are filling out the entire height of their flex container, regardless
+            of what is being put in them.
+        </p>
+        <p>Even when I took away the definied height of the "body-box" container in css, both 
+            columns grew at the same rate when I added more to just this one. The only way I was able
+            to get different heights was to specify them in the css for each column. This may possibly
+            be due to my usage of the following line of code for the first column:
+        </p>
+        <p>flex: 0 0 300px;</p>
+        <p>I used this line of code to set the width of column one at 300px and not allow
+            it to shrink or expand, since we were told to keep it at 300px.
+        </p>
+    </div>
+</div>
+<hr>
+<footer>Footer</footer>
+ 
+</body>
+</html>

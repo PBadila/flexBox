@@ -1,0 +1,40 @@
+header{
+    background-color: purple;
+    height:75px;
+    font-size:2em;
+    text-align: center;
+}
+
+#body-box{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: auto;
+    height:800px; 
+}
+
+#column-1{
+    background-color: cyan;
+    flex: 0 0 300px;
+    font-size:2em;
+    text-align:center;   
+    
+}
+
+#column-2{
+    background-color: pink;
+    
+    flex-basis:auto;
+    flex-grow:1;
+    margin-left:15px;
+    font-size:2em;
+    text-align:center;
+    
+}
+footer{
+    background-color:blue;
+    height:75px;
+    font-size:2em;
+    text-align:center;
+}
+
